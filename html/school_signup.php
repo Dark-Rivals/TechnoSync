@@ -36,7 +36,7 @@ $sql = "INSERT INTO schoollogin (school_name, city, district, state, pincode, ma
         VALUES ('$school_name', '$city', '$district', '$state', '$pincode', '$max_grade', '$no_of_students', '$authority_name', '$contact_number', '$school_email', '$location_link', '$authority_id_path','$password')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "Signup successful!";
+  header("Location: school_login.html");
 } else {
   echo "Error: ";
 }
