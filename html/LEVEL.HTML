@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Level Upgrading</title>
+  <style>
+    .level-line {
+      display: flex;
+      align-items: flex-end;
+    }
+    
+    .level-icon-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+    }
+    
+    .level-icon {
+      width: 60px;
+      height: 60px;
+      background-color: #b79fff;
+      border-radius: 50%;
+    }
+    
+    .level-number {
+      font-weight: bold;
+      margin-top: 8px;
+      text-align: center;
+    }
+    
+    .level-connector {
+      fill: none;
+      stroke: #2a32d8;
+      stroke-width: 2px;
+    }
+  </style>
+</head>
+<body>
+    <br>
+  <h1>Level Upgrading</h1><br><br>
+
+  <div class="level-line">
+    <div class="level-icon-container">
+      <div class="level-icon"></div>
+      <span class="level-number">Level 1</span>
+    </div>
+    <svg width="100%" height="100%" viewBox="0 0 400 80">
+      <path class="level-connector" d="M80 40 C160 0 320 0 400 40" />
+    </svg>
+    <div class="level-icon-container">
+      <div class="level-icon"></div>
+      <span class="level-number">Level 2</span>
+    </div>
+    <svg width="100%" height="100%" viewBox="0 0 400 80">
+      <path class="level-connector" d="M80 40 C160 80 320 80 400 40" />
+    </svg>
+    <div class="level-icon-container">
+      <div class="level-icon"></div>
+      <span class="level-number">Level 3</span>
+    </div>
+    <svg width="100%" height="100%" viewBox="0 0 400 80">
+      <path class="level-connector" d="M80 40 C160 0 320 0 400 40" />
+    </svg>
+    <div class="level-icon-container">
+      <div class="level-icon"></div>
+      <span class="level-number">Level 4</span>
+    </div>
+    <svg width="100%" height="100%" viewBox="0 0 400 80">
+        <path class="level-connector" d="M80 40 C160 0 320 0 400 40" />
+      </svg>
+      <div class="level-icon-container">
+        <div class="level-icon"></div>
+        <span class="level-number">Level 5</span>
+      </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>School Signup</title>
+</head>
+<body>
+  <h2>School Signup</h2>
+  <form action="school_signup.php" method="POST" enctype="multipart/form-data">
+    <label for="school_name">School Name:</label>
+    <input type="text" id="school_name" name="school_name" required><br><br>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required><br><br>
+
+    <label for="district">District:</label>
+    <input type="text" id="district" name="district" required><br><br>
+
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state" required><br><br>
+
+    <label for="pincode">Pincode:</label>
+    <input type="text" id="pincode" name="pincode" required><br><br>
+
+    <label for="max_grade">Maximum Grade:</label>
+    <input type="radio" name="max_grade" value="LP" required> LP
+    <input type="radio" name="max_grade" value="UP"> UP
+    <input type="radio" name="max_grade" value="HS"> HS<br><br>
+
+    <label for="no_of_students">Number of Students:</label>
+    <input type="text" id="no_of_students" name="no_of_students" required><br><br>
+
+    <label for="authority_name">Authority Name:</label>
+    <input type="text" id="authority_name" name="authority_name" required><br><br>
+
+    <label for="contact_number">Contact Number:</label>
+    <input type="text" id="contact_number" name="contact_number" required><br><br>
+
+    <label for="school_email">School Email:</label>
+    <input type="email" id="school_email" name="school_email" required><br><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="location_link">Location Link:</label>
+    <input type="text" id="location_link" name="location_link"><br><br>
+
+    <label for="authority_id">Authority ID Card:</label>
+    <input type="file" id="authority_id" name="authority_id" accept="image/*" required><br><br>
+
+    <input type="submit" value="Sign Up">
+  </form>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>School Signup</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+ 
+ 
+ 
+ 
+
+    body {
+      font-family: 'Arial', serif, sans-serif;
+      background-color: #87CEEB;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 0 auto;
+      background-color: #feffff;
+      border-radius: 30px;
+      box-shadow: 5px 5px 20px rgba(76, 143, 215, 0.1);
+    }
+   
+    
+    label {
+      font-weight: bold;
+    }
+  p{ 
+    font-weight: bold;
+  }
+ 
+    h1 {
+      text-align: center;
+      color: #0d0101;
+      margin-top: 30px;
+      margin-bottom: 20px; 
+    }
+
+    form {
+      margin-top: 30px;
+    }
+    
+
+    input[type="text"] {
+      width: 70%;
+      padding: 10px;
+      border: 1px solid #2c88f1;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-right: 500px;
+      margin-top: 10px;
+    }
+    input[type="text"] {
+   width: 70%;
+   padding: 10px;
+   border: 1px solid #2c88f1;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-right: 500px;
+   margin-top: 10px;
+ }
+ input[type="text"] {
+   width: 70%;
+   padding: 10px;
+   border: 1px solid #2c88f1;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-right: 500px;
+   margin-top:10px ;
+ }
+
+ input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #2c88f1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 500px;
+  margin-top:10px ;
+}
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #2c88f1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 500px;
+  margin-top:10px ;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #2c88f1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 500px;
+  margin-top:10px ;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #2c88f1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 500px;
+  margin-top:10px ;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #2c88f1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 500px;
+  margin-top:10px ;
+}
+
+input[type="number"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #2c88f1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 500px;
+  margin-top:10px ;
+}
+
+input[type="email"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #2c88f1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 500px;
+  margin-top:10px ;
+}
+input[type="password"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #2c88f1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 500px;
+  margin-top:10px ;
+}
+
+input[type="link"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #2c88f1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 500px;
+  margin-top:10px ;
+}
+  </style>
+  <style>
+    #qualification {
+      width: 70%;
+ padding: 10px;
+ border: 1px solid #2c88f1;
+ border-radius: 4px;
+ box-sizing: border-box;
+ margin-right: 500px;
+ margin-top:10px ;
+ 
+    
+
+    }
+    
+  </style>
+   <style>
+    #student {
+      width: 5%;
+ padding: 5px;
+ border: 1px solid#2c88f1;
+ border-radius: 4px;
+ box-sizing: border-box;
+ 
+ margin-top:0px ;
+    
+    }
+
+  </style>
+
+
+<style>
+  button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 500px;
+    margin-top: 20px;
+    padding: 5px;
+border: 2px solid #2692b2ef;
+background-color: #2692b2ef;
+  }
+</style>
+  
+</head>
+<body>
+  <div class="container">
+    <h1>School Signup</h1>
+   
+   
+
+  </div>
+</body>
+</html>
+
+ 
+ 
+    <form action="school_signup.php" method="POST" enctype="multipart/form-data">
+      <label for="text"><br>School Name:</label>
+      <input type="text" name="school_name" placeholder="School name" required>
+  
+      <label for="text"><br>City:</label>
+
+      <input type="text" name="city" placeholder="City" required>
+
+      <label for="text"><br>District:</label>
+      <input type="text" name="district" placeholder="District" required>
+
+      <label for="text"><br>State:</label>
+<input type="text" name="state" placeholder="State" required>
+
+<label for="text"><br>Pincode:</label>
+<input type="text" name="pincode" placeholder="Pincode" required>
+
+<label for="max_grade">Maximum Grade:</label>
+    <input type="radio" name="max_grade" value="LP" required> LP
+    <input type="radio" name="max_grade" value="UP"> UP
+    <input type="radio" name="max_grade" value="HS"> HS<br><br>
+
+<label for="text">Number of Students:</label>
+<input type="text" name="no_of_students" placeholder="Number of Students" required>
+
+<br>
+<label for="text"><br>Authority Name:</label><br>
+<input type="text" name="authority_name" placeholder="Authority Name" required>
+
+<label for="number"><br>Contact Number:</label>
+<input type="text" name="contact_number" placeholder="Contact Number" required>
+
+<label for="email"><br>School Email:</label>
+<input type="email" name="school_email" placeholder="School Email" required>
+  
+<label for="password"><br>Password:</label>
+<input type="password" name="password" placeholder="Password" required>
+
+<label for="link"><br>Location Link:</label>
+<input type="link" name="location_link" placeholder="location Link" required>
+
+
+ <p>Authority ID Card:</p>
+ <input type="file" name="authority_id" accept="image/*">
+
+ <br>
+ <button type="submit">Signup</button>
+    </form>
+  </div>
+</body>
+</html>

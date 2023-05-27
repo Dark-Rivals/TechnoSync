@@ -1,0 +1,447 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Mentor Signup</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+      background-color: #4e7cb5;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #feffff;
+      border-radius: 30px;
+      box-shadow: 5 5 20px #4e7cb5(76, 143, 215, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #040404;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #f551a3;
+      border-radius: 4px;
+      box-sizing: border-box;
+  
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-top: 5px;
+      text-align: center;
+    }
+
+    button[type="submit" ] {
+      display: block;
+      width: 90%;
+      padding: 20px;
+      margin-top: 20px;
+      background-color: #f551a3;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Mentor Signup</h1>
+   
+    <form action="mentor_signup.php" method="POST" enctype="multipart/form-data">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+
+      <label for="qualification">Highest Qualification:</label>
+      <select name="qualification" id="qualification" required>
+        <option value="btech">B.Tech</option>
+        <option value="mtech">M.Tech</option>
+        <option value="plustwo">Plus Two</option>
+        <option value="bca">BCA</option>
+        <option value="mca">MCA</option>
+        <option value="phd">PhD</option>
+      </select>
+
+      <p>Are you a student or professional?</p>
+      <input type="radio" name="status" id="student" value="student" required>
+      <label for="student">Student</label>
+
+      <input type="radio" name="status" id="professional" value="professional" required>
+      <label for="professional">Professional</label>
+
+      <p>Year of study:</p>
+      <select name="year_of_study" required>
+        <option value="1">1st year</option>
+        <option value="2">2nd year</option>
+        <option value="3">3rd year</option>
+        <option value="4">4th year</option>
+        <option value="graduated">Graduated</option>
+      </select>
+      <p>Interested Topics:</p>
+      <label for="excel">Excel</label>
+      <input type="checkbox" name="topics[]" id="excel" value="excel">
+      
+      <label for="powerpoint">PowerPoint</label>
+      <input type="checkbox" name="topics[]" id="powerpoint" value="powerpoint">
+      
+      <label for="animation">Animation</label>
+      <input type="checkbox" name="topics[]" id="animation" value="animation">
+      
+      <p>Experience:</p>
+      <textarea name="experience" rows="4" cols="30"></textarea>
+      
+      <p>Upload Photo:</p>
+      <input type="file" name="photo" accept="image/*">
+      <p>Upload idproof:</p>
+      <input type="file" name="id_proof" accept="image/*">
+      <p>Upload certifications if any:</p>
+      <input type="file" name="certifications" accept="image/*">
+
+      
+      <button type="submit">Signup</button>
+    </form>
+  </div>
+</body>
+</html> 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mentor Signup</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+      background-color: #4e7cb5;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #feffff;
+      border-radius: 30px;
+      box-shadow: 5 5 20px #4e7cb5(76, 143, 215, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #040404;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #f551a3;
+      border-radius: 4px;
+      box-sizing: border-box;
+  
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-top: 5px;
+      text-align: center;
+    }
+
+    button[type="submit" ] {
+      display: block;
+      width: 90%;
+      padding: 20px;
+      margin-top: 20px;
+      background-color: #f551a3;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Mentor Signup</h1>
+   
+    <form action="mentor_signup.php" method="POST" enctype="multipart/form-data">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+
+      <label for="qualification">Highest Qualification:</label>
+      <select name="qualification" id="qualification" required>
+        <option value="btech">B.Tech</option>
+        <option value="mtech">M.Tech</option>
+        <option value="plustwo">Plus Two</option>
+        <option value="bca">BCA</option>
+        <option value="mca">MCA</option>
+        <option value="phd">PhD</option>
+      </select>
+
+      <p>Are you a student or professional?</p>
+      <input type="radio" name="status" id="student" value="student" required>
+      <label for="student">Student</label>
+
+      <input type="radio" name="status" id="professional" value="professional" required>
+      <label for="professional">Professional</label>
+
+      <p>Year of study:</p>
+      <select name="year_of_study" required>
+        <option value="1">1st year</option>
+        <option value="2">2nd year</option>
+        <option value="3">3rd year</option>
+        <option value="4">4th year</option>
+        <option value="graduated">Graduated</option>
+      </select>
+      <p>Interested Topics:</p>
+      <label for="excel">Excel</label>
+      <input type="checkbox" name="topics[]" id="excel" value="excel">
+      
+      <label for="powerpoint">PowerPoint</label>
+      <input type="checkbox" name="topics[]" id="powerpoint" value="powerpoint">
+      
+      <label for="animation">Animation</label>
+      <input type="checkbox" name="topics[]" id="animation" value="animation">
+      
+      <p>Experience:</p>
+      <textarea name="experience" rows="4" cols="30"></textarea>
+      
+      <p>Upload Photo:</p>
+      <input type="file" name="photo" accept="image/*">
+      <p>Upload idproof:</p>
+      <input type="file" name="id_proof" accept="image/*">
+      <p>Upload certifications if any:</p>
+      <input type="file" name="certifications" accept="image/*">
+
+      
+      <button type="submit">Signup</button>
+    </form>
+  </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mentor Signup</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      font-family: 'Arial', serif, sans-serif;
+      background-color: #3a6dba;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 0 auto;
+      background-color: #feffff;
+      border-radius: 30px;
+      box-shadow: 5px 5px 20px rgba(76, 143, 215, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #0d0101;
+      margin-top: 30px;
+      margin-bottom: 20px; 
+    }
+
+    form {
+      margin-top: 30px;
+    }
+label{ 
+  font-weight:bold;
+}
+p{ 
+  font-weight:bold;
+}
+    input[type="text"] {
+      width: 70%;
+      padding: 10px;
+      border: 1px solid #f551a3;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-right: 500px;
+      margin-top: 10px;
+    }
+    input[type="email"] {
+   width: 70%;
+   padding: 10px;
+   border: 1px solid #f551a3;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-right: 500px;
+   margin-top: 10px;
+ }
+ input[type="password"] {
+   width: 70%;
+   padding: 10px;
+   border: 1px solid #f551a3;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-right: 500px;
+   margin-top:10px ;
+ }
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #f551a3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 500px;
+  margin-top:10px ;
+}
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #f551a3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 500px;
+  margin-top:10px ;
+}
+  </style>
+  <style>
+    #qualification {
+      width: 70%;
+ padding: 10px;
+ border: 1px solid #f551a3;
+ border-radius: 4px;
+ box-sizing: border-box;
+ margin-right: 500px;
+ margin-top:10px ;
+  }
+    
+  </style>
+   <style>
+    #student {
+      width: 5%;
+ padding: 5px;
+ border: 1px solid #f551a3;
+ border-radius: 4px;
+ box-sizing: border-box;
+ 
+ margin-top:0px ;
+    
+    }
+
+  </style>
+<style>
+  button {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 500px;
+    margin-top: 20px;
+    padding: 5px;
+border: 1px solid #8376f7;
+background-color:#8376f7;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Mentor Signup</h1>
+  </div>
+</body>
+</html>
+
+ <form action="mentor_signup.php" method="POST" enctype="multipart/form-data">
+      <label for="text"> <br>Name:</label>
+      <input type="text" name="name" placeholder=" Name" required>
+      <label for="email"><br>Email:</label>
+      <input type="email" name="email" placeholder="email" required>
+
+      <label for="password"><br>Password:</label>
+      <input type="password" name="password" placeholder="Password" required>
+      <label for="qualification"><br>Highest Qualification:</label>
+      <select name="qualification" id="qualification" required>
+        <option value="btech">B.Tech</option>
+        <option value="mtech">M.Tech</option>
+        <option value="plustwo">Plus Two</option>
+        <option value="bca">BCA</option>
+        <option value="mca">MCA</option>
+        <option value="phd">PhD</option>
+
+      </select>
+      <p>Are you a student or professional?</p>
+      <input type="radio" name="status" id="students" value="student" required>
+      <label for="student">Student</label>
+      <input type="radio" name="status" id="professional" value="professional" required>
+      <label for="professional">Professional</label>
+
+      <p>Year of study:</p>
+      <select name="year_of_study" required>
+        <option value="1">1st year</option>
+        <option value="2">2nd year</option>
+        <option value="3">3rd year</option>
+        <option value="4">4th year</option>
+        <option value="graduated">Graduated</option>
+      </select>
+      <p>Interested Topics:</p>
+      <label for="excel">Excel</label>
+      <input type="checkbox" name="topics[]" id="excel" value="excel">
+      <label for="powerpoint">PowerPoint</label>
+      <input type="checkbox" name="topics[]" id="powerpoint" value="powerpoint">
+       <label for="animation">Animation</label>
+      <input type="checkbox" name="topics[]" id="animation" value="animation">
+      <label for="geogebra">Geogebra</label>
+      <input type="checkbox" name="topics[]" id="geogebra" value="geogebra">
+      <p>Share you experience in these topics:</p>
+      <textarea name="experience" rows="4" cols="30"></textarea>
+     
+     <p>Upload Photo:</p>
+     <input type="file" name="photo" accept="image/*">
+     <p>Upload idproof:</p>
+     <input type="file" name="id_proof" accept="image/*">
+     <p>Upload certifications if any:</p>
+     <input type="file" name="certifications" accept="image/*">
+     <p><button type="submit">Signup</button></p>
+    </form>
+  </div>
+</body>
+</html>
