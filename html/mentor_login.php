@@ -9,22 +9,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $email = $_POST["email"];
   $password = $_POST["password"];
 
-  // Prepare the query to fetch mentor login data
+  // Prepare the query to fetch school login data
   $stmt = $conn->prepare("SELECT * FROM mentorlogin WHERE email = ?");
   $stmt->bind_param("s", $email);
   $stmt->execute();
 
   // Get the result of the query
   $result = $stmt->get_result();
-  
-  if ($result->num_rows === 1) {
-    // Fetch the mentor login data
-    $row = $result->fetch_assoc();
 
+  if ($result->num_rows === 1) {
+    // Fetch the school login data
+    $row = $result->fetch_assoc();
     // Verify the password
+
+  
     if ($password === $row['password']) {
       // Successful login
-      $_SESSION['mentorId'] = $row['id']; 
+      $_SESSION['mentorId'] = $row['id'];
       header("Location: mentor_home.php");
       exit();
     } else {

@@ -42,7 +42,7 @@ $sql = "INSERT INTO mentorlogin (name, email, password, qualification, status, y
         VALUES ('$name', '$email', '$password', '$qualification', '$status', '$year_of_study', '$topics', '$experience', '$photo_path', '$id_proof_path', '$certifications_path')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "Signup successful!";
+  header("Location: mentor_login.html");
 } else {
   echo "Error";
 }
