@@ -89,7 +89,7 @@
 <body bgcolor="#0f52ba">
 <header>
   <div id="logo">
-    <img src="logo.png" alt="Logo">
+    <img src="connect logo.jpeg" alt="Logo">
     <div id="website-name">Skill Share</div>
   </div>
   <div id="user-profile">
