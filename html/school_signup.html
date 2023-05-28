@@ -75,8 +75,10 @@
       max-width: 400px;
       margin: 0 auto;
       padding: 0 auto;
+      border: 1px solid;
+      box-shadow: 5px 10px 8px #888888;
       background-color: #feffff;
-      border-radius: 30px;
+      border-radius: 40px;
       box-shadow: 5px 5px 20px rgba(76, 143, 215, 0.1);
     }
    
@@ -126,9 +128,10 @@
    box-sizing: border-box;
    margin-right: 500px;
    margin-top:10px ;
+   box-shadow: 5px 10px 8px #888888;
  }
 
- input[type="text"] {
+/* input[type="text"] {
   width: 70%;
   padding: 10px;
   border: 1px solid #2c88f1;
@@ -175,7 +178,7 @@ input[type="text"] {
   box-sizing: border-box;
   margin-right: 500px;
   margin-top:10px ;
-}
+} */
 
 input[type="number"] {
   width: 70%;
@@ -185,6 +188,7 @@ input[type="number"] {
   box-sizing: border-box;
   margin-right: 500px;
   margin-top:10px ;
+  box-shadow: 5px 10px 8px #888888;
 }
 
 input[type="email"] {
@@ -195,6 +199,7 @@ input[type="email"] {
   box-sizing: border-box;
   margin-right: 500px;
   margin-top:10px ;
+  box-shadow: 5px 10px 8px #888888;
 }
 input[type="password"] {
   width: 70%;
@@ -204,6 +209,7 @@ input[type="password"] {
   box-sizing: border-box;
   margin-right: 500px;
   margin-top:10px ;
+  box-shadow: 5px 10px 8px #888888;
 }
 
 input[type="link"] {
@@ -214,6 +220,7 @@ input[type="link"] {
   box-sizing: border-box;
   margin-right: 500px;
   margin-top:10px ;
+  box-shadow: 5px 10px 8px #888888;
 }
   </style>
   <style>
@@ -231,7 +238,7 @@ input[type="link"] {
     }
     
   </style>
-   <style>
+  <!--<style>
     #student {
       width: 5%;
  padding: 5px;
@@ -244,7 +251,7 @@ input[type="link"] {
     }
 
   </style>
-
+-->
 
 <style>
   button {
@@ -252,26 +259,24 @@ input[type="link"] {
     height: 50px;
     font-size: 20px;
     padding: 10px;
-    margin-left: 500px;
+    margin : 0 auto;
+    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
     margin-top: 20px;
     padding: 5px;
 border: 2px solid #2692b2ef;
 background-color: #2692b2ef;
   }
 </style>
-  
+
 </head>
-<body>
+<body >
   <div class="container">
     <h1>School Signup</h1>
-   
-   
-
   </div>
-</body>
-</html>
-
- 
  
     <form action="school_signup.php" method="POST" enctype="multipart/form-data">
       <label for="text"><br>School Name:</label>
@@ -289,7 +294,7 @@ background-color: #2692b2ef;
 
 <label for="text"><br>Pincode:</label>
 <input type="text" name="pincode" placeholder="Pincode" required>
-
+<br><br><br>
 <label for="max_grade">Maximum Grade:</label>
     <input type="radio" name="max_grade" value="LP" required> LP
     <input type="radio" name="max_grade" value="UP"> UP
@@ -321,6 +326,15 @@ background-color: #2692b2ef;
  <br>
  <button type="submit">Signup</button>
     </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
   </div>
 </body>
 </html>
